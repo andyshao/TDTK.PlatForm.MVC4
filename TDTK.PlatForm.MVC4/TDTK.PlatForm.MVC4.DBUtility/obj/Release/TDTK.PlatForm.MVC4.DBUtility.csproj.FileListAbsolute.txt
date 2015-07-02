@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\bin\Release\TDTK.PlatForm.MVC4.DBUtility.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\bin\Release\TDTK.PlatForm.MVC4.DBUtility.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\bin\Release\MySql.Data.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\bin\Release\System.Data.SQLite.DLL
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\obj\Release\TDTK.PlatForm.MVC4.DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\obj\Release\TDTK.PlatForm.MVC4.DBUtility.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DBUtility\obj\Release\TDTK.PlatForm.MVC4.DBUtility.pdb

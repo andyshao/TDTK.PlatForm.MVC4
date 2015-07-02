@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.DAL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.DAL.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.DBUtility.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.IDAL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.Model.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\MySql.Data.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.DBUtility.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.IDAL.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\bin\Release\TDTK.PlatForm.MVC4.Model.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\obj\Release\TDTK.PlatForm.MVC4.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\obj\Release\TDTK.PlatForm.MVC4.DAL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DAL\obj\Release\TDTK.PlatForm.MVC4.DAL.pdb

@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "行业主管平台登陆页";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/CSS/Main.css" rel="stylesheet" type="text/css" />
+
+@using (Html.BeginForm("Main", "LoginPlatform", FormMethod.Post, new { id = "form1" }))
+{
+    <table id="__01" width="100%" height="613px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td rowspan="3" style="background: url(../../Images/1_01.gif) repeat; height: 613px; width: 700px"></td>
+            <td rowspan="3">
+                <img src="~/images/1_02.gif" width="1" height="613" alt="" />
+            </td>
+            <td colspan="2">
+                <img src="~/images/1_03.gif" width="482" height="242" alt="" />
+            </td>
+            <td rowspan="3" style="background: url(../../Images/1_01.gif) repeat; height: 613px; width: 700px"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background: url(../../Images/1_05.gif); height: 152px; width: 482px">
+                <table width="100%">
+                    <tr>
+                        <td width="23%"></td>
+                        <td onkeydown="aaaa()">
+                            <font color="2c397d">请选择部门：</font>
+                        </td>
+                        <td colspan="2">
+                            <span class="required">
+                                @Html.DropDownList("department", null, new { style = "width:140px", id = "ddldept", name = "ddldept" })
+                                *
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="23%"></td>
+                        <td onkeydown="aaaa()">
+                            <font color="2c397d">请选择用户：</font>
+                        </td>
+                        <td colspan="2">
+                            @Html.DropDownList("user", null, new { style = "width:140px", name = "ddluser", id = "ddluser" }) *
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="23%"></td>
+                        <td>
+                            <font color="2c397d">请输入密码：</font>
+                        </td>
+                        <td colspan="2">
+                            @Html.Password("txtPassword", null, new { id = "txtPassword", title = "请输入密码", maxlength = "100", @class = "textbox", style = "width:132px;" })
+                            <span class="required">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="23%"></td>
+                        <td>
+                            <font color="2c397d">输入验证码：</font>
+                        </td>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        @Html.TextBox("txtCheckCode", null, new { id = "txtCheckCode", title = "请输入验证码", @class = "textbox", style = "color:Black;font-family:黑体;font-size:14px;width:80px;", maxlength = "4" })
+                                    </td>
+                                    <td>
+                                        &nbsp;<img id="valdata" alt="看不清，点击换一张" style="height: 19px" src="ValidateCode" onclick="changeSrc(this)" width="50" />
+                                        <script type="text/javascript">
+                                            function changeSrc(id) {
+                                                var time = new Date();
+                                                id.src = "ValidateCode/" + time.getMilliseconds();
+                                            }
+                                        </script>
+                                        <span class="required">*</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="center">
+                            @Html.TextBox("ibnLogin", "登录", new { type = "submit", style = "border-width:0px;" })
+                            @Html.TextBox("ibnCancel", "清空", new { type = "reset", style = "border-width:0px;" })
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/images/1_06.gif" style="width:481px;height:219px" alt="北京天大天科科技发展有限公司" />
+            </td>
+            <td>
+                <img src="~/images/1_07.gif" style="width:1px;height:219px" alt="下右侧边" />
+            </td>
+        </tr>
+    </table>
+}

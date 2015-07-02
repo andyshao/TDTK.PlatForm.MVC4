@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<script type="text/javascript">
+    $(function () {
+        //加载菜单
+        LoadMenu();
+        //从后台获取json数据
+        function LoadMenu() {
+            $.getJSON("/Home/GetTreeMenu", {}, function (data) {
+
+                //实现在菜单拦中的显示,遍历节点集合
+                for (var i = 0; i < data.length; i++) {
+                    var groupInfo = data[i]; //拿到组的信息
+                    var root = groupInfo.Key.Name;
+                    var str = "";
+                    for (var e = 0; e < groupInfo.Value.length; e++) {
+                        str += "<a onclick='addtabs(this)' href='javascript:void(0)' class='Aonclick' url='" + groupInfo.Value[e].TreeUrl + "'>" + groupInfo.Value[e].Name + "</a><br />"
+                    }
+                    addPanel(root, str);
+                }
+
+            });
+        }
+        //根据数据添加菜单内容
+        function addPanel(root, str) {
+            $('#Mytrees').accordion('add', {
+                title: root,
+                content: str
+            });
+        }
+    });
+
+    //点击菜单超链接
+    function addtabs(id) {
+        var title = $(id).text();//获取超链接标题
+        var content = $(id).attr("url");//获取超链接指定地址
+        addPanel(title, content);
+    }
+    //添加页签
+    function addPanel(title, url) {
+        var isEX = $('#tt').tabs("exists", title);
+        if (isEX) {
+            $('#tt').tabs("select", title);
+            return;
+        }
+        $('#tt').tabs('add', {
+            title: title,
+            content: Showcontent(url),
+            closable: true
+        });
+    }
+    //添加页签的内容
+    function Showcontent(url) {
+        var stringHtml = '<iframe src="' + url + '" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>';
+        return stringHtml;
+    }
+</script>
+
+
+
+<body class="easyui-layout">
+    <!---------------------------顶部布局开始-------------------------------->
+    <div data-options="region:'north',border:false" style="height:80px;background:#B3DFDA;padding:10px;background-image: url('/Images/index_top_center.gif');padding:0 0;overflow:hidden">
+        <img src="/Images/index_top_left.gif" alt="Alternate Text" style="float: left" />
+        <img src="~/Images/index_top_center_pic.gif" alt="Alternate Text" style="margin-top:0;padding-top:0;float:left" />
+        <table style="float:right" width="40%" name="头部小菜单">
+            <tr>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+            </tr>
+            <tr>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+                <td><span style="visibility:hidden">我是占位</span></td>
+            </tr>
+
+            <tr valign="bottom">
+                <td style="color: #3356b4;" valign="bottom">欢迎:&nbsp; @ViewBag.userName</td>
+                <td valign="bottom"><a href="#" style="color: #3356b4" onclick="parent.location.href='LoginPlatform.aspx'">注销</a></td>
+                <td>
+                    <img alt="" src="/Images/topbg3_17.gif" style="vertical-align: bottom;" />
+                    <a href="javascript:void(0)" style="vertical-align: bottom; height: 22px; margin-right: 10px;
+                                                                        text-decoration: none"><font style="color: #3356b4">短信</font></a>
+                </td>
+                <td>
+                    <img alt="" src="/Images/topbg3_20.gif" style="vertical-align: bottom;" />
+                    <a href="javascript:void(0)" style="vertical-align: bottom; height: 22px; margin-right: 10px;
+                                                                        text-decoration: none"><font style="color: #3356b4">通知</font></a>
+                </td>
+                <td>
+                    <img alt="" src="/Images/topbg3_22.gif" style="vertical-align: bottom;" />
+                    <a href="javascript:slcontentDisplayOrHidden();" style="vertical-align: bottom; height: 22px;
+                                                                        margin-right: 10px; text-decoration: none"><font style="color: #3356b4">报警</font></a>
+                </td>
+                <td>
+                    <img alt="" src="/Images/topbg3_24.gif" style="vertical-align: bottom;" />
+                    <a href="javascript:UpdatePwd();" style="vertical-align: bottom; height: 22px; margin-right: 15px;
+                                                                        text-decoration: none"><font style="color: #3356b4">修改密码</font></a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <!---------------------------顶部布局结束-------------------------------->
+    <!---------------------------左边布局开始-------------------------------->
+    <div data-options="region:'west',split:true,title:'菜单栏'" style="width:150px;padding:2px;">
+        <div id="Mytrees" class="easyui-accordion" data-options="multiple:true" style="width:auto;height:auto;">
+           
+        </div>
+    </div>
+    <!---------------------------左边布局结束-------------------------------->
+    <!---------------------------中间布局开始-------------------------------->
+    <div data-options="region:'center',title:'Center'">
+        <div class="easyui-tabs" style="width: 700px; height: 250px" fit="true" id="tt">
+            <div title="登录" style="padding: 10px" data-options="closable:true">
+                    <iframe src="//" scrolling="auto" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+        </div>
+
+    </div>
+    <!---------------------------中间布局结束-------------------------------->
+    <!---------------------------底部边布局开始-------------------------------->
+    <div data-options="region:'south',border:false" style="height:30px;background:#A9FACD;padding:10px;text-align:center;">
+        版权 &copy; TDTK2015
+    </div>
+    <!---------------------------底部边布局结束-------------------------------->
+
+</body>
+

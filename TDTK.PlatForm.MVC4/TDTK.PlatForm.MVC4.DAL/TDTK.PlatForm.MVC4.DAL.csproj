@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83CAB119-1347-4720-A8F1-90771F348E19}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDTK.PlatForm.MVC4.DAL</RootNamespace>
+    <AssemblyName>TDTK.PlatForm.MVC4.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardLogin.cs" />
+    <Compile Include="Sys_Colliery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys_BusinType.cs" />
+    <Compile Include="Sys_Dictionary.cs" />
+    <Compile Include="SYS_FailerSendMessage2012.cs" />
+    <Compile Include="Sys_FileSave.cs" />
+    <Compile Include="Sys_LeaveWord.cs" />
+    <Compile Include="Sys_Menu.cs" />
+    <Compile Include="Sys_MenuPosition.cs" />
+    <Compile Include="Sys_OperateLog.cs" />
+    <Compile Include="Sys_Operator.cs" />
+    <Compile Include="Sys_OperatorPosition.cs" />
+    <Compile Include="Sys_Organization.cs" />
+    <Compile Include="SYS_Position.cs" />
+    <Compile Include="SYS_ReceiveMessage2012.cs" />
+    <Compile Include="SYS_SucceedSendMessage2012.cs" />
+    <Compile Include="TT_BadHandle.cs" />
+    <Compile Include="TT_BadRecord.cs" />
+    <Compile Include="TT_CarInfo.cs" />
+    <Compile Include="TT_CheckBang.cs" />
+    <Compile Include="TT_CoalKind.cs" />
+    <Compile Include="TT_ColieryAccount.cs" />
+    <Compile Include="TT_CollBalance.cs" />
+    <Compile Include="TT_CollierySupervise.cs" />
+    <Compile Include="TT_CollRunCoalKind.cs" />
+    <Compile Include="TT_EmptyWeight.cs" />
+    <Compile Include="TT_InitialCard.cs" />
+    <Compile Include="TT_LoadWeight.cs" />
+    <Compile Include="TT_LoadWeightBackup.cs" />
+    <Compile Include="TT_LoadWeightByDay.cs" />
+    <Compile Include="TT_LoadWeightEditLog.cs" />
+    <Compile Include="TT_MarkedCard.cs" />
+    <Compile Include="TT_MarkedCardSendRecord.cs" />
+    <Compile Include="TT_MessagePerson.cs" />
+    <Compile Include="TT_MonitorLoadWeight.cs" />
+    <Compile Include="TT_MonitorOperator.cs" />
+    <Compile Include="TT_Navicert.cs" />
+    <Compile Include="TT_NavicertLog.cs" />
+    <Compile Include="TT_OperatorMonitorRoom.cs" />
+    <Compile Include="TT_OutInWeight.cs" />
+    <Compile Include="TT_OutLoadWeight.cs" />
+    <Compile Include="TT_PitheadBill.cs" />
+    <Compile Include="TT_PitheadBillDetail.cs" />
+    <Compile Include="TT_PitheadBillExtend.cs" />
+    <Compile Include="TT_RFCard.cs" />
+    <Compile Include="TT_Room.cs" />
+    <Compile Include="TT_RoomSupervise.cs" />
+    <Compile Include="TT_Supervise.cs" />
+    <Compile Include="TT_TaxAssignDetail.cs" />
+    <Compile Include="TT_TaxItem.cs" />
+    <Compile Include="TT_TaxItemDetail.cs" />
+    <Compile Include="TT_TaxOutItemDetail.cs" />
+    <Compile Include="TT_TaxUnit.cs" />
+    <Compile Include="TT_TempCard.cs" />
+    <Compile Include="TT_TransferAccounts.cs" />
+    <Compile Include="TT_TwoPrintLog.cs" />
+    <Compile Include="TT_WaterBook.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TDTK.PlatForm.MVC4.DBUtility\TDTK.PlatForm.MVC4.DBUtility.csproj">
+      <Project>{d7f1d602-bfad-4c00-8116-0e17eb7fc646}</Project>
+      <Name>TDTK.PlatForm.MVC4.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDTK.PlatForm.MVC4.IDAL\TDTK.PlatForm.MVC4.IDAL.csproj">
+      <Project>{d37c787f-3a21-4e16-8731-597e761304d8}</Project>
+      <Name>TDTK.PlatForm.MVC4.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDTK.PlatForm.MVC4.Model\TDTK.PlatForm.MVC4.Model.csproj">
+      <Project>{f146f615-6064-4bcd-8250-1e254c7e2b27}</Project>
+      <Name>TDTK.PlatForm.MVC4.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

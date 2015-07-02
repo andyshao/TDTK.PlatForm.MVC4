@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.DALFactory.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.DALFactory.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.IDAL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.Model.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.IDAL.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\bin\Release\TDTK.PlatForm.MVC4.Model.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\obj\Release\TDTK.PlatForm.MVC4.DALFactory.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\obj\Release\TDTK.PlatForm.MVC4.DALFactory.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.DALFactory\obj\Release\TDTK.PlatForm.MVC4.DALFactory.pdb

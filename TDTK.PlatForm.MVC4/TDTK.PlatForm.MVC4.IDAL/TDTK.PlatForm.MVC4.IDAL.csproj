@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D37C787F-3A21-4E16-8731-597E761304D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDTK.PlatForm.MVC4.IDAL</RootNamespace>
+    <AssemblyName>TDTK.PlatForm.MVC4.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBaseRepository.cs" />
+    <Compile Include="ICardLogin.cs" />
+    <Compile Include="ISys_BusinType.cs" />
+    <Compile Include="ISys_Colliery.cs" />
+    <Compile Include="ISys_Dictionary.cs" />
+    <Compile Include="ISYS_FailerSendMessage2012.cs" />
+    <Compile Include="ISys_FileSave.cs" />
+    <Compile Include="ISys_LeaveWord.cs" />
+    <Compile Include="ISys_Menu.cs" />
+    <Compile Include="ISys_MenuPosition.cs" />
+    <Compile Include="ISys_OperateLog.cs" />
+    <Compile Include="ISys_Operator.cs" />
+    <Compile Include="ISys_OperatorPosition.cs" />
+    <Compile Include="ISys_Organization.cs" />
+    <Compile Include="ISYS_Position.cs" />
+    <Compile Include="ISYS_ReceiveMessage2012.cs" />
+    <Compile Include="ISYS_SucceedSendMessage2012.cs" />
+    <Compile Include="ITT_BadHandle.cs" />
+    <Compile Include="ITT_BadRecord.cs" />
+    <Compile Include="ITT_CarInfo.cs" />
+    <Compile Include="ITT_CheckBang.cs" />
+    <Compile Include="ITT_CoalKind.cs" />
+    <Compile Include="ITT_ColieryAccount.cs" />
+    <Compile Include="ITT_CollBalance.cs" />
+    <Compile Include="ITT_CollierySupervise.cs" />
+    <Compile Include="ITT_CollRunCoalKind.cs" />
+    <Compile Include="ITT_EmptyWeight.cs" />
+    <Compile Include="ITT_InitialCard.cs" />
+    <Compile Include="ITT_LoadWeight.cs" />
+    <Compile Include="ITT_LoadWeightBackup.cs" />
+    <Compile Include="ITT_LoadWeightByDay.cs" />
+    <Compile Include="ITT_LoadWeightEditLog.cs" />
+    <Compile Include="ITT_MarkedCard.cs" />
+    <Compile Include="ITT_MarkedCardSendRecord.cs" />
+    <Compile Include="ITT_MessagePerson.cs" />
+    <Compile Include="ITT_MonitorLoadWeight.cs" />
+    <Compile Include="ITT_MonitorOperator.cs" />
+    <Compile Include="ITT_Navicert.cs" />
+    <Compile Include="ITT_NavicertLog.cs" />
+    <Compile Include="ITT_OperatorMonitorRoom.cs" />
+    <Compile Include="ITT_OutInWeight.cs" />
+    <Compile Include="ITT_OutLoadWeight.cs" />
+    <Compile Include="ITT_PitheadBill.cs" />
+    <Compile Include="ITT_PitheadBillDetail.cs" />
+    <Compile Include="ITT_PitheadBillExtend.cs" />
+    <Compile Include="ITT_RFCard.cs" />
+    <Compile Include="ITT_Room.cs" />
+    <Compile Include="ITT_RoomSupervise.cs" />
+    <Compile Include="ITT_Supervise.cs" />
+    <Compile Include="ITT_TaxAssignDetail.cs" />
+    <Compile Include="ITT_TaxItem.cs" />
+    <Compile Include="ITT_TaxItemDetail.cs" />
+    <Compile Include="ITT_TaxOutItemDetail.cs" />
+    <Compile Include="ITT_TaxUnit.cs" />
+    <Compile Include="ITT_TempCard.cs" />
+    <Compile Include="ITT_TransferAccounts.cs" />
+    <Compile Include="ITT_TwoPrintLog.cs" />
+    <Compile Include="ITT_WaterBook.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TDTK.PlatForm.MVC4.Model\TDTK.PlatForm.MVC4.Model.csproj">
+      <Project>{f146f615-6064-4bcd-8250-1e254c7e2b27}</Project>
+      <Name>TDTK.PlatForm.MVC4.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

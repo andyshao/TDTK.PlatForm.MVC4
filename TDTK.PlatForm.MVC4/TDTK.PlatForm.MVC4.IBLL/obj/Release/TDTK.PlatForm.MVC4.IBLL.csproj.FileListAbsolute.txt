@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\bin\Release\TDTK.PlatForm.MVC4.IBLL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\bin\Release\TDTK.PlatForm.MVC4.IBLL.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\bin\Release\TDTK.PlatForm.MVC4.Model.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\bin\Release\TDTK.PlatForm.MVC4.Model.pdb
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\obj\Release\TDTK.PlatForm.MVC4.IBLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\obj\Release\TDTK.PlatForm.MVC4.IBLL.dll
+C:\Users\Administrator\Desktop\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4\TDTK.PlatForm.MVC4.IBLL\obj\Release\TDTK.PlatForm.MVC4.IBLL.pdb
